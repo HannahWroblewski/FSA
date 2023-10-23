@@ -37,7 +37,17 @@ const userInputString = prompt(
    * @returns {number} the length of the array
    */
   function getLength(numbers) {
-    // TODO
+    // create a variable count that starts at 0
+    let count = 0;
+    // loop through the array
+    for(let i = 0; i < numbers.length; i++){
+      // with each iteration, add to count
+      count += 1;
+    }
+    console.log("count", count)
+    return count;
+    // return count
+  
   }
   
   /**
