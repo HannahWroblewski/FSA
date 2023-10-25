@@ -38,16 +38,15 @@ const userInputString = prompt(
    */
   function getLength(numbers) {
     // create a variable count that starts at 0
-    let count = 0;
+    let lengthOfArray = 0;
     // loop through the array
     for(let i = 0; i < numbers.length; i++){
       // with each iteration, add to count
-      count += 1;
+      lengthOfArray += 1;
     }
-    console.log("count", count)
-    return count;
+    
+    return lengthOfArray;
     // return count
-  
   }
   
   /**
@@ -55,7 +54,17 @@ const userInputString = prompt(
    * @returns {number} the sum of the numbers
    */
   function getSum(numbers) {
-    // TODO
+    // create a varibale sum and set it at 0
+    let sum = 0;
+    // loop through the numbers array
+    for(let i = 0; i < numbers.length; i++){
+         // add number[i] to sum
+      sum += numbers[i];
+    }
+
+      // return sum
+      return sum;
+    
   }
   
   /**
