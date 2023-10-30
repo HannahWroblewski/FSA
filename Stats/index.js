@@ -72,10 +72,7 @@ const userInputString = prompt(
    * @returns {number} the mean of the numbers
    */
   function getMean(numbers) {
-    // check to see if numbers is an array (if not, return an earror message)
-    if (!numbers){
-      console.log("Error: Empty Array");
-    }
+  
     // create variable to store the sum of the numbers
     let sum = 0;
     // iterate through array and add each idx to the sum
