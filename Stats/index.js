@@ -90,7 +90,17 @@ const userInputString = prompt(
    * @returns {number} the smallest of the numbers
    */
   function getMin(numbers) {
-    // TODO
+    // create variables for min
+    let min = numbers[0];
+    // loop through array, numbers[i] is equal to min
+    for(let i = 1; i < numbers.length; i++){
+      if(numbers[i] < min){
+        min = numbers[i];
+      }
+    }
+    
+    // return min
+    return min;
   }
   
   /**
@@ -98,7 +108,17 @@ const userInputString = prompt(
    * @returns {number} the largest of the numbers
    */
   function getMax(numbers) {
-    // TODO
+        // create undefined variables for min
+    let max = numbers[0];
+    // loop through array, numbers[i] is equal to min
+    for(let i = 1; i < numbers.length; i++){
+      if(numbers[i] > max){
+        max = numbers[i];
+      }
+    }
+    
+    // return max
+    return max;
   }
   
   /**
